@@ -42,6 +42,7 @@ footer{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  padding-right: 10px;
   flex: 1;
 }
 .link_img{
@@ -62,6 +63,7 @@ footer{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  padding-left: 10px;
   flex: 1;
 }
 .btn-group{
