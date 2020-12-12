@@ -1,3 +1,80 @@
-.navbar.navbar-4 .navbar-toggler-icon {
-background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=BFE100');
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 2000px;
+  border: 1px solid white;
+  background-color: purple;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  color: white;
+  border: 1px solid green;
+}
+
+article{
+  display: flex;
+  flex-direction:column;
+  width: 100%;
+  height: 500px;
+  border: 1px solid blue;
+}
+
+footer{
+  display: flex;
+  width: 100%;
+  /**height: 500px;**/
+  border: 1px solid black;
+}
+
+.default{
+  height: 100px;
+}
+
+.header_div{
+  border: 1px solid orange;
+}
+
+.header_L{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 10px;
+  flex: 1;
+}
+.link_img{
+  height: 97px;
+}
+.immagine{
+  max-height: 100%;
+  height: 100%;
+  border: 1px solid red;
+}
+
+.header_C{
+  width: 1000px;
+  flex: initial;
+}
+
+.header_R{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 10px;
+  flex: 1;
+}
+.btn-group{
+  height: 100%;
+  border: 1px solid red;
+}
+.navigazione{
+  position: absolute;
+  top: 35px;
+}
+.ciccio{
+  position: fixed;
 }
