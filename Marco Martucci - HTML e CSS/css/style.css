@@ -54,10 +54,33 @@ header{
 
 article{
   display: flex;
-  flex-direction:column;
-  width: 100%;
-  height: 500px;
+  flex-direction: row;
+  width: 1000px;
   border: 1px solid blue;
+}
+.scheda{
+  display: flex;
+  flex-direction:column;
+  width: 200px;
+}
+.relative{
+  position: relative;
+  bottom: 148px;
+  background-color: white;
+  height: 200px;
+  border-radius: 10px 10px 10px 5px;
+  z-index: -1;
+}
+.rotondo{
+  border-radius: 50px;
+}
+.wiew{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 50px;
+  padding-right: 5px;
 }
 
 footer{
