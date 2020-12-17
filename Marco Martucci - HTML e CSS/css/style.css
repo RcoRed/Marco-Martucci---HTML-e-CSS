@@ -28,25 +28,23 @@ nav{
 .nav_L{
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: flex-end;
-  padding-right: 10px;
-  padding-top: 20px;
   flex: 1;
 }
 .nav_C{
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
-  padding-top: 30px;
   width: 1000px;
   flex: initial;
 }
 .nav_R{
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: flex-start;
-  padding-left: 10px;
-  padding-top: 25px;
   flex: 1;
 }
 
