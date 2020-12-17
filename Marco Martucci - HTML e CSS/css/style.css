@@ -6,8 +6,10 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   background-color: purple;
-  background-image: url(immagini/ombrabianca.png);
+  background-image: url(../immagini/sfondo2.png);
+  background-size: cover;
 }
 
 nav{
@@ -47,9 +49,8 @@ header{
   flex-direction: row;
   width: 1000px;
   height: 500px;
-  border: 1px solid black;
 }
-.presenta{
+.presentatxt{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -66,15 +67,30 @@ header{
   font-family: helvetica;
   font-weight: bold;
   color: white;
-  border-bottom: 1px solid black;
   width: 200px
+}
+.linea{
+  border-bottom: 1px solid white;
+}
+.presentaimg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+.ps{
+  border-top: 1px white solid;
+  font-family: helvetica;
+  color: white;
+  font-size: 10px;
 }
 
 article{
   display: flex;
   flex-direction: column;
   width: 1000px;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 .card-container{
   display: flex;
@@ -84,6 +100,11 @@ article{
 }
 .scheda{
   width: 200px;
+}
+.bio{
+  padding-top: 50px;
+  font-family: helvetica;
+  color: white;
 }
 
 
