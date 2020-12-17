@@ -2,6 +2,12 @@
   border: 1px solid red;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
   display: flex;
   flex-direction: column;
@@ -81,7 +87,7 @@ header{
 }
 .ps{
   border-top: 1px white solid;
-  font-family: helvetica;
+  font-family: helvetica,arial,sans-serif;
   color: white;
   font-size: 10px;
 }
@@ -105,6 +111,8 @@ article{
   padding-top: 50px;
   font-family: helvetica;
   color: white;
+  width: 500px;
+  text-align: left;
 }
 
 
