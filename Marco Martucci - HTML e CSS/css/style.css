@@ -1,15 +1,11 @@
 .bordo{
   border: 1px solid red;
 }
-.lineadivalta{
-  border-top: 1px solid white;
-}
 
 body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 2000px;
   background-color: purple;
   background-image: url(immagini/ombrabianca.png);
 }
@@ -21,79 +17,6 @@ nav{
   height: 100px;
   color: white;
 }
-
-header{
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  width: 1000px;
-  height: 500px;
-  /*background-color: #bdbdbd;*/
-  border: 1px solid black;
-}
-.presentadx{
-  flex: 1;
-}
-.presentasx{
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.paroleforti{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
-}
-.ciccio{
-  font-family: helvetica;
-  font-weight: bold;
-  color: white;
-}
-
-article{
-  display: flex;
-  flex-direction: row;
-  width: 1000px;
-  border: 1px solid blue;
-}
-.scheda{
-  display: flex;
-  flex-direction:column;
-  width: 200px;
-}
-.relative{
-  position: relative;
-  bottom: 148px;
-  background-color: white;
-  height: 200px;
-  border-radius: 10px 10px 10px 5px;
-  z-index: -1;
-}
-.rotondo{
-  border-radius: 50px;
-}
-.wiew{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  position: relative;
-  bottom: 50px;
-  padding-right: 5px;
-}
-
-footer{
-  display: flex;
-  width: 100%;
-  /*height: 500px;*/
-  border: 1px solid black;
-}
-
-.default{
-  height: 100px;
-}
-
 .nav_L{
   display: flex;
   flex-direction: row;
@@ -102,7 +25,6 @@ footer{
   padding-top: 20px;
   flex: 1;
 }
-
 .nav_C{
   display: flex;
   flex-direction: row;
@@ -111,7 +33,6 @@ footer{
   width: 1000px;
   flex: initial;
 }
-
 .nav_R{
   display: flex;
   flex-direction: row;
@@ -119,4 +40,58 @@ footer{
   padding-left: 10px;
   padding-top: 25px;
   flex: 1;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  height: 500px;
+  border: 1px solid black;
+}
+.presenta{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 500px;
+}
+.paroleforti{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  padding-right: 100px;
+}
+.testo{
+  font-family: helvetica;
+  font-weight: bold;
+  color: white;
+  border-bottom: 1px solid black;
+  width: 200px
+}
+
+article{
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  margin-top: 50px;
+}
+.card-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.scheda{
+  width: 200px;
+}
+
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100px;
 }
