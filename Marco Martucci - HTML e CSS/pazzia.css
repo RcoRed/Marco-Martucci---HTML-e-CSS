@@ -1,80 +1,124 @@
+.bordo{
+  border: 1px solid red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 2000px;
-  border: 1px solid white;
+  width: 100%;
   background-color: purple;
+  background-image: url(../immagini/sfondo2.png);
+  background-size: cover;
 }
 
-header{
+nav{
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 100px;
   color: white;
-  border: 1px solid green;
+}
+.nav_L{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+.nav_C{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  flex: initial;
+}
+.nav_R{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  height: 500px;
+}
+.presentatxt{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 500px;
+}
+.paroleforti{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  padding-right: 100px;
+}
+.testo{
+  font-family: helvetica;
+  font-weight: bold;
+  color: white;
+  width: 200px
+}
+.linea{
+  border-bottom: 1px solid white;
+}
+.presentaimg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+.ps{
+  border-top: 1px white solid;
+  font-family: helvetica,arial,sans-serif;
+  color: white;
+  font-size: 10px;
 }
 
 article{
   display: flex;
-  flex-direction:column;
-  width: 100%;
-  height: 500px;
-  border: 1px solid blue;
+  flex-direction: column;
+  width: 1000px;
+  padding-top: 50px;
 }
+.card-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.scheda{
+  width: 200px;
+}
+.bio{
+  padding-top: 50px;
+  font-family: helvetica;
+  color: white;
+  width: 500px;
+  text-align: left;
+}
+
 
 footer{
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
-  /**height: 500px;**/
-  border: 1px solid black;
-}
-
-.default{
   height: 100px;
-}
-
-.header_div{
-  border: 1px solid orange;
-}
-
-.header_L{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding-right: 10px;
-  flex: 1;
-}
-.link_img{
-  height: 97px;
-}
-.immagine{
-  max-height: 100%;
-  height: 100%;
-  border: 1px solid red;
-}
-
-.header_C{
-  width: 1000px;
-  flex: initial;
-}
-
-.header_R{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding-left: 10px;
-  flex: 1;
-}
-.btn-group{
-  height: 100%;
-  border: 1px solid red;
-}
-.navigazione{
-  position: absolute;
-  top: 35px;
-}
-.ciccio{
-  position: fixed;
 }
