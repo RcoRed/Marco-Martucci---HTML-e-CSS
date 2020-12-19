@@ -15,6 +15,7 @@
 body{
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   background-color: blue;
   /*background-image: url(../immagini/sfondo2.png);
@@ -26,31 +27,55 @@ nav{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  height: 30px;
   color: white;
+  width: 100%;
 }
-.nav_L{
-  padding: 5px;
-}
-.nav_R{
+.fixed{
   position: fixed;
-  bottom: 10px;
-  right: 10px;
-  border: 1px solid invisible;
 }
 
 header{
   display: flex;
   flex-direction: row;
-  width: 100%;
+}
+.presentatxt{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.paroleforti{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+.testo{
+  font-family: helvetica;
+  font-weight: bold;
+  color: white;
+}
+.linea{
+  border-bottom: 1px solid white;
+}
+.presentaimg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ps{
+  border-top: 1px white solid;
+  font-family: helvetica,arial,sans-serif;
+  color: white;
 }
 
 article{
   display: flex;
-  flex-direction: column;
-  width: 100%;
   padding-top: 50px;
+}
+.card-container{
+  display: flex;
+  align-items: center;
 }
 
 footer{
@@ -59,15 +84,65 @@ footer{
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 30px;
 }
 
-media only screen and (max-width: 400px) {
+@media only screen and (max-width: 960px) {
 
+  body{
+    background-color: purple;
+    background-image: url(../immagini/sfondo2piccolo.png);
+    background-size: cover;
+  }
+  nav{
+    height: 30px;
+  }
+  .nav_L{
+    width: 30px;
+    padding: 5px;
+  }
+  .nav_R{
+    color: black;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1;
+  }
+
+  header{
+    width: 100%;
+    padding-top: 30px;
+  }
+  .presentatxt{
+    width: 50%;
+  }
+  .presentaimg{
+    width: 50%;
+  }
+  .ps{
+    font-size: 9px;
+  }
+
+  article{
+    flex-direction: row;
+    width: 100%;
+    padding-top: 50px;
+  }
+  .card-container{
+    flex-direction: column;
+  }
+  .scheda{
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  footer{
+    height: 30px;
+  }
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
+
   body {
     background-color: red;
   }
@@ -78,23 +153,24 @@ media only screen and (max-width: 400px) {
 
   body{
     background-color: purple;
-    /*background-image: url(../immagini/sfondo2.png);
-    background-size: cover; da inserire dopo!!!!*/
+    background-image: url(../immagini/sfondo2.png);
+    background-size: cover;
   }
 
   nav{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
     height: 100px;
-    color: white;
   }
   .nav_L{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    padding-right: 10px;
     flex: 1;
+  }
+  .fix{
+    width: 50px;
+    position: fixed;
   }
   .nav_C{
     display: flex;
@@ -102,6 +178,7 @@ media only screen and (max-width: 400px) {
     align-items: center;
     justify-content: center;
     width: 1000px;
+    height: 100%;
     flex: initial;
   }
   .nav_R{
@@ -109,59 +186,38 @@ media only screen and (max-width: 400px) {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    color: white;
+    padding-left: 10px;
+    height: 100px;
     flex: 1;
   }
 
   header{
-    display: flex;
-    flex-direction: row;
     width: 1000px;
     height: 500px;
   }
   .presentatxt{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     width: 500px;
   }
   .paroleforti{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
     padding-right: 100px;
   }
   .testo{
-    font-family: helvetica;
-    font-weight: bold;
-    color: white;
     width: 200px
   }
-  .linea{
-    border-bottom: 1px solid white;
-  }
   .presentaimg{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 500px;
   }
   .ps{
-    border-top: 1px white solid;
-    font-family: helvetica,arial,sans-serif;
-    color: white;
     font-size: 10px;
   }
 
   article{
-    display: flex;
     flex-direction: column;
     width: 1000px;
     padding-top: 50px;
   }
   .card-container{
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 50px;
@@ -177,13 +233,7 @@ media only screen and (max-width: 400px) {
     text-align: left;
   }
 
-
   footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
     height: 100px;
   }
 }
