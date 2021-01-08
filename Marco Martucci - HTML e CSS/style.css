@@ -5,6 +5,12 @@
   width: 100%;
   display: block;
 }
+.Selezione{
+  user-select: none;
+}
+.textShadow{
+  text-shadow: 4px 4px 7px black;
+}
 
 * {
   margin: 0;
@@ -48,7 +54,7 @@ header{
   text-align: left;
 }
 .testo{
-  font-family: helvetica;
+  font-family: helvetica,arial,sans-serif;
   font-weight: bold;
   color: white;
 }
@@ -69,11 +75,23 @@ header{
 
 article{
   display: flex;
+  align-items: center;
   padding-top: 50px;
 }
 .card-container{
   display: flex;
   align-items: center;
+}
+
+.aboutMe{
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.testoMe{
+  color: white;
+  border-left: 1px solid white;
+  padding-left: 10px;
 }
 
 footer{
@@ -113,11 +131,19 @@ footer{
   .presentatxt{
     width: 50%;
   }
+  .paroleforti{
+    padding-left: 5px;
+    align-items: flex-start;
+  }
   .presentaimg{
+    padding-right: 5px;
     width: 50%;
   }
+  .testo{
+    font-size: 16px;
+  }
   .ps{
-    font-size: 9px;
+    font-size: 10px;
   }
 
   article{
@@ -127,11 +153,22 @@ footer{
   }
   .card-container{
     flex-direction: column;
+    align-items: center;
   }
   .scheda{
-    width: 80%;
+    width: 50%;
     margin-bottom: 30px;
   }
+
+  .aboutMe{
+    text-align: left;
+    padding: 30px 5px 40px 5px;
+    font-size: 17px;
+  }
+  .testoMe{
+    border-left: none;
+  }
+
 
   footer{
     height: 30px;
@@ -180,6 +217,7 @@ footer{
     flex: initial;
   }
   .nav_R{
+    visibility: hidden;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -205,6 +243,7 @@ footer{
   }
   .presentaimg{
     width: 500px;
+    padding-right: 70px;
   }
   .ps{
     font-size: 10px;
